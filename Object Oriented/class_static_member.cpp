@@ -21,6 +21,9 @@ class Box
 		int compare(Box b){
 			return this->volume() > b.volume();
 		}
+		static int getCount(void){
+			return objCnt;
+		}
 };
 
 int Box::objCnt = 0;
@@ -40,7 +43,10 @@ int main()
 
 	cout << Box1.volume() << endl; 
 	cout << ptrBox->volume() << endl; 
+
+	// Call static members
 	cout << Box::objCnt << endl;
+	cout << Box::getCount() << endl;
 
 	return 0;
 }

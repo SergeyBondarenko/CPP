@@ -9,11 +9,11 @@ int main()
 	int *p;
 	p = &i;
 
-	cout << &i << "\n";
-	cout << &mystr << "\n";
+	cout << "&i= " << &i << "\n";
+	cout << "&mystr= " << &mystr << "\n";
 
-	cout << p << "\n";
-	cout << *p << "\n";
+	cout << "p= " << p << "\n";
+	cout << "*p= " << *p << "\n";
 
 	return 0;
 }

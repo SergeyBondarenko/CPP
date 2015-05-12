@@ -1,11 +1,14 @@
 #include <iostream>
 #include <cstring>
 
+#define MAX 32 
+
 using namespace std;
 
 int main()
 {
 	char greets[] = "Hello";
+	char fruit[MAX];
 
 	cout << greets << "\n";
 	cout << greets[0] << "\n";
@@ -22,7 +25,10 @@ int main()
 	cout << str3 << "\n";
 	cout << str1 << "\n";
 	cout << strl << "\n";
-	
+
+	cout << fruit << "\n";
+	strcpy(fruit, "apple");
+	cout << fruit << "\n";
 
 	return 0;
 }
